@@ -37,7 +37,6 @@ def parse_xml(content, transport, base_url=None, strict=True,
     :type strict: boolean
     :returns: The document root
     :rtype: lxml.etree._Element
-
     """
     recover = not strict
     parser = etree.XMLParser(remove_comments=True, resolve_entities=False,
